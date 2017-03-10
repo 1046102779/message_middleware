@@ -93,7 +93,7 @@ func (t *Consumer) SendMessage(topic string, msg []byte) (err error) {
 	}
 	switch topic {
 	case "template":
-		conf.OfficialAccountClient.Call(fmt.Sprintf("official_accounts", "SendMessage"), t.TopicMap[topic], t.TopicMap[topic])
+		conf.OfficialAccountClient.Call(fmt.Sprintf("%s.%s", "official_accounts", "SendMessage"), t.TopicMap[topic], t.TopicMap[topic])
 	case "sms":
 		conf.SmsClient.Call(fmt.Sprintf("%s.%s", "sms", "SendSingleSms"), t.TopicMap[topic], t.TopicMap[topic])
 	case "email":
