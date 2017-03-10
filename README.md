@@ -10,7 +10,9 @@ $  go get -v -u github.com/1046102779/message_middleware
 ```
 
 
+
 ## 说明
 
++ `设计到的技术有：[**beego**](https://beego.me/), [**rpcx**](github.com/smallnest/rpcx), [**sarama**](https://github.com/Shopify/sarama)`
 + `希望与大家一起成长，有任何该服务运行或者代码问题，可以及时找我沟通，喜欢开源，热爱开源, 欢迎多交流`   
 + `联系方式：cdh_cjx@163.com`
