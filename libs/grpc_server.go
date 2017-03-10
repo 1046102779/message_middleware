@@ -1,4 +1,4 @@
-package models
+package libs
 
 import (
 	"encoding/json"
@@ -6,7 +6,7 @@ import (
 
 	"github.com/Shopify/sarama"
 
-	pb "github.com/1046102779/igrpc"
+	pb "github.com/1046102779/message_middleware/igrpc"
 )
 
 type ProducerConsumerServer struct{}

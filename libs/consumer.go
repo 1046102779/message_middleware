@@ -1,4 +1,4 @@
-package models
+package libs
 
 import (
 	"encoding/json"
@@ -7,8 +7,8 @@ import (
 	"strings"
 	"sync"
 
-	pb "github.com/1046102779/igrpc"
 	"github.com/1046102779/message_middleware/conf"
+	pb "github.com/1046102779/message_middleware/igrpc"
 	"github.com/Shopify/sarama"
 )
 
