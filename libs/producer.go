@@ -30,6 +30,7 @@ func GetProducerInstance() *Producer {
 		config.Producer.RequiredAcks = sarama.NoResponse
 		config.Producer.Compression = 2
 		config.Producer.Timeout = 1000 * time.Millisecond
+		config.Producer.RequiredAcks = sarama.WaitForLocal
 		client, err := sarama.NewClient(conf.KafkaClusterServers, config)
 		if err != nil {
 			panic(err)
